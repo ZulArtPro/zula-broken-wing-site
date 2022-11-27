@@ -1,0 +1,278 @@
+/* CSS ZulaBrokenWing website Style Sheet */
+
+/* Get fonts */
+@font-face {
+    font-family: 'CreativeDesigner';
+    src: url(fonts/CreativeDesigner);
+}
+
+@font-face {
+    font-family: 'Viner Hand ITC';
+    src: url(fonts/Viner-Hand-ITC);
+}
+
+@font-face {
+    font-family: 'Designosaur';
+    src: url(fonts/Designosaur-Regular);
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url(fonts/Berlin-Sans-FB-Regular);
+}
+
+/* Set header size */
+header{
+    width: auto;
+}
+
+/* Set main size */
+main{
+    width: auto;
+}
+
+/* Make background black and text white */
+body{
+    background-color:#212121;
+    color: #FFFFFF;
+    /*Causing the screen to have a side scroller */
+    /*width: 100%;*/
+}
+
+/* Make logo align to the left of the text title, and adjust its scale */
+#logo{
+    float: left;
+
+    width: 7em; /* Get size of logo on the page (Experiment with size once format is established) */
+
+    position: relative;
+    top: 1em;
+    left: 10em;
+
+    /*outline: 1px solid blue;*/
+}
+
+/* Adjust the header size */
+header{
+    width: 100%;
+    height: 20em;
+    /*
+    outline: 1px solid red;
+    */
+}
+
+/* Adjust Header1 font size, style, and alignment */
+h1{
+    font-size: 8em; /* 128px / 16 = 8em */
+    text-align: center;
+    font-family: "Creative Designer", "Brush Script MT", cursive;
+    margin:auto;
+    margin: 2%;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 5em;
+}
+/* End Header1 adjust */
+
+/* Adjust the navigation bar's font size, color, style, and alignment */
+#navigate{
+    margin: 0 auto;
+    width: 95%;
+    /*padding: 1em;*/
+    /*outline: 1px solid yellow;*/
+    margin-bottom: 5%;
+
+    /* Nudge to the left */
+    position: relative;
+    right: 1em;
+}
+
+#navigate ul {
+    /*outline: 1px solid white;*/
+    margin: 0 auto;
+}
+
+#navigate ul li{
+    color: #FFFFFF;
+    font-size: 3.5em; /* 56px / 16 = 3.5em */
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    
+    width: 20%;
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    /*
+    outline: 1px solid white;
+    */
+    /*margin-left: 1em;
+    margin-right: 1em;*/
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#navigate ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* End navigation bar */
+
+/* Adjust article width to the page */
+#article{
+    width: 100%;
+    /*outline: 1px solid red;*/
+}
+
+/* Adjust Header2 font size, style, and alignment */
+h2{
+    font-size: 5em; /* 80px / 16 = 5em */
+    font-family: "Viner Hand ITC", "Brush Script MT", cursive;
+}
+
+/*Center article header on the left*/
+.art-l-cent-head{
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+/* Adjust article text width to the page */
+#a-text{
+    width: 50%;
+    /*outline: 1px solid red;*/
+
+    position: relative;
+    top: 1em;
+    left: 5em;
+}
+
+/* Adjust article font size, style, margins, and alignment */
+#article p{
+    font-size: 2em; /* 32px / 16 = 2em */
+    text-align: left;
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+
+    /*outline: 1px solid red;*/
+    
+}
+
+/* Make any image that's on the side of the text go to the right */
+#r-side-img{
+    float: right;
+    vertical-align: top;
+    
+    margin-bottom: 5%;
+    /*margin-left: 5%;*/
+
+    /* Why does not having this break everything??? */
+    /*margin: 1%;*/
+
+    /*outline: 1px solid red;*/
+    
+    position: relative;
+    right: 5em;
+
+    width: 35em; /* Get size of image on the page (Make larger once format is established) */
+}
+
+/* Adjust button font size, style, and alignment */
+#buttons{
+    width: 100%;
+    /*outline: 1px solid red;*/
+    text-align: center;
+    clear: both;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.orange{
+    background-color: #F59600;
+    color: #FFFFFF;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 2.5em; /* 48px / 16 = 3em */
+    border: none;
+    border-radius: 25em;
+    padding: .2em;
+    width: 9em;
+    margin: .25em;
+}
+
+.purple{
+    background-color: #5511A8;
+    color: #FFFFFF;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 2.5em; /* 48px / 16 = 3em */
+    border: none;
+    border-radius: 25em;
+    padding: .2em;
+    width: 9em;
+    margin: .25em;
+}
+/* End button adjustment */
+
+/* Make footer have a diffrent color, adjust the font size, font style, and alignment */
+footer{
+    font-size: 1.5em; /* 16px / 16 = 1em */
+    line-height: 3;
+    text-align: center;
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+    background-color: #000000;
+    padding: 2%;
+}
+
+/* Forms */
+
+/*Center article header*/
+.art-cent-head{
+    text-align: center;
+    /*outline: 1px solid green;*/
+}
+
+/* Form */
+form{
+    /* Trying to center the form*/
+    width: 50%;
+    margin: 0 auto;
+
+    display: block;
+    text-align: center;
+
+    /*outline: 1px solid blue;*/
+
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 2em; /* 32px / 16 = 2em */
+}
+
+/* Input */
+input[type=text]{
+    width: 15em;
+    height: 3em;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+}
+
+textarea{
+    width: 50em;
+    height: 30em;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+}
+
+input[type=submit]{
+    
+    width: 9em;
+    height: 3em;
+    
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 1em; /* 32px / 16 = 2em */
+
+    background-color: #5511A8;
+    color: #FFFFFF;
+
+    border-radius: 2em;
+    border: none;
+
+    margin-bottom: 5%;
+}
+/* End Input and Form */

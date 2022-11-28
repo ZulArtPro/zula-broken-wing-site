@@ -139,9 +139,25 @@ h2{
     margin-bottom: 5%;
 }
 
+/*Center article header*/
+.art-cent-head{
+    text-align: center;
+    /*outline: 1px solid green;*/
+}
+
+/* Adjust article text width to the page */
+#a-l-text{
+    width: 50%; /*Left align*/
+    /*outline: 1px solid red;*/
+
+    position: relative;
+    top: 1em;
+    left: 5em;
+}
+
 /* Adjust article text width to the page */
 #a-text{
-    width: 50%;
+    width: 90%;
     /*outline: 1px solid red;*/
 
     position: relative;
@@ -225,12 +241,6 @@ footer{
 
 /* Forms */
 
-/*Center article header*/
-.art-cent-head{
-    text-align: center;
-    /*outline: 1px solid green;*/
-}
-
 /* Form */
 form{
     /* Trying to center the form*/
@@ -276,3 +286,48 @@ input[type=submit]{
     margin-bottom: 5%;
 }
 /* End Input and Form */
+
+/* Start of TOS page */
+
+/* Mini Header */
+.mini-header{
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 3em; /* 48px / 16 = 3em */
+    /*outline: 1px solid pink;*/
+}
+
+/* Tiny Header */
+.tiny-h{
+    font-size: 2.5em; /* 40px / 16 = 2.5em */
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+    font-weight: normal;
+}
+
+/* Center Please */
+.center-plz{
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 3em; /* 48px / 16 = 3em */
+    text-align: center;
+    /*outline: 1px solid royalblue;*/
+}
+
+/* TOS List */
+.tos-list{
+    font-size: 2em; /* 32px / 16 = 2em */
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+}
+
+/* Spaced TOS List */
+.spaced{
+    margin-bottom: 2%;
+}
+
+/* Center Paragraph */
+#article p.center-p{
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+    width: 100%;
+    /*outline: 1px solid orchid;*/
+
+    text-align: center;
+}
+

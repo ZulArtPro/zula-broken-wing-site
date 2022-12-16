@@ -110,6 +110,9 @@ h1 a{
     list-style-type: none;
     text-align: center;
     float: left;
+
+    text-decoration: none;
+    color: #FFFFFF;
     /*
     outline: 1px solid white;
     */
@@ -420,6 +423,7 @@ input[type=submit]{
     text-align: center;
     text-decoration: none;
     list-style: none;
+    color: #FFFFFF;
     
 }
 
@@ -430,6 +434,7 @@ input[type=submit]{
 .no-bullet{
     text-decoration: none;
     list-style: none;
+    color: #FFFFFF;
 }
 
 .centered-list{

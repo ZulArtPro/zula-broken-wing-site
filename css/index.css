@@ -21,6 +21,12 @@
     src: url(fonts/Berlin-Sans-FB-Regular);
 }
 
+/* a href remove underline */
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /* Set header size */
 header{
     width: auto;
@@ -107,9 +113,9 @@ h1 a{
     /*
     outline: 1px solid white;
     */
-    /*margin-left: 1em;
-    margin-right: 1em;*/
-
+    margin-left: 1em;
+    margin-right: 1em;
+    
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
@@ -130,6 +136,15 @@ h1 a{
 h2{
     font-size: 5em; /* 80px / 16 = 5em */
     font-family: "Viner Hand ITC", "Brush Script MT", cursive;
+}
+
+/* Adjust Header4 font size, style, and alignment */
+h4{
+    text-align: center;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 2em; /* 32px / 16 = 2em */
+
+    color: #FFFFFF;
 }
 
 /*Center article header on the left*/
@@ -175,27 +190,18 @@ h2{
     
 }
 
-/* Make any image that's on the side of the text go to the right */
-#r-side-img{
-    float: right;
-    vertical-align: top;
-    
-    margin-bottom: 5%;
-    /*margin-left: 5%;*/
-
-    /* Why does not having this break everything??? */
-    /*margin: 1%;*/
-
+/* Adjust button font size, style, and alignment */
+#buttons{
+    width: 100%;
     /*outline: 1px solid red;*/
-    
-    position: relative;
-    right: 5em;
-
-    width: 35em; /* Get size of image on the page (Make larger once format is established) */
+    text-align: center;
+    clear: both;
+    margin: auto;
+    margin-bottom: 5%;
 }
 
 /* Adjust button font size, style, and alignment */
-#buttons{
+#buttons2{
     width: 100%;
     /*outline: 1px solid red;*/
     text-align: center;
@@ -218,6 +224,21 @@ h2{
 
 .purple{
     background-color: #5511A8;
+    color: #FFFFFF;
+    font-family: "Designosaur", "Tahoma", sans-serif;
+    font-size: 2.5em; /* 48px / 16 = 3em */
+    border: none;
+    border-radius: 25em;
+    padding: .2em;
+    width: 9em;
+    margin: .25em;
+}
+
+.greyed-out{
+    /* Grey out */
+    opacity: .5;
+
+    /*background-color: #5511A8;*/
     color: #FFFFFF;
     font-family: "Designosaur", "Tahoma", sans-serif;
     font-size: 2.5em; /* 48px / 16 = 3em */
@@ -331,3 +352,103 @@ input[type=submit]{
     text-align: center;
 }
 
+/* Make any image that's on the side of the text go to the right */
+#r-side-img{
+    float: right;
+    vertical-align: top;
+    
+    margin-bottom: 5%;
+    /*margin-left: 5%;*/
+
+    /* Why does not having this break everything??? */
+    /*margin: 1%;*/
+
+    /*outline: 1px solid red;*/
+    
+    position: relative;
+    right: 5em;
+
+    width: 35em; /* Get size of image on the page (Make larger once format is established) */
+}
+
+/* Right Side Images */
+.p-r-side-img{
+    float: right;
+    vertical-align: top;
+
+    /*outline: 1px solid cyan;*/
+    
+    position: relative;
+    right: 5em;
+
+    width: 39em; /* Get size of image on the page (Make larger once format is established) */
+}
+
+/* Center Images */
+.center-img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 45em;
+    /*outline: 1px solid purple;*/
+}
+
+/* Large Center Images */
+.l-center-img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90em;
+    /*outline: 1px solid purple;*/
+}
+/* Left Side Articles */
+.a-left-text{
+    width: 47%; /*Left align*/
+    /*outline: 1px solid pink;*/
+
+    position: relative;
+    top: 1em;
+    left: 5em;
+}
+
+/* List formats */ 
+.socials-list{
+    font-size: 2em; /* 32px / 16 = 2em */
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.socials-list li{
+    margin-bottom: 5%;
+}
+
+.no-bullet{
+    text-decoration: none;
+    list-style: none;
+}
+
+.centered-list{
+    font-size: 2em; /* 32px / 16 = 2em */
+    font-family: "Berlin Sans FB", "Trebuchet MS", sans-serif;
+    
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Split screne in half to focus on image examples */
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+video{
+    width: 90%;
+    display: block;
+    margin: auto;
+}

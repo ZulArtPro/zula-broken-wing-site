@@ -3,7 +3,7 @@
 	<head>
 		<!-- Character set and page title and connect to CSS -->
 		<meta charset="UTF-8">
-		<title>ZulaBrokenWing - Contact Form</title>
+		<title>ZulaBrokenWing - Socials</title>
 		<link href="css/index.css" rel="stylesheet" type="text/css">
 	</head>
 	<!-- Make background black -->
@@ -28,46 +28,36 @@
 			</nav>
 		</header>
 
-		<!-- Main part of the page -->
+		<!-- Main part of the homepage (2 sections: Article, Buttons) -->
 		<main>
-			<!-- Article Title -->
-			<h2 class="art-cent-head">Contact me</h2>
 
-			<!-- Contact Form -->
-			<form>
-				<!-- Fill Out -->
+            <h2 class="art-cent-head">About:</h2>
 
-				<!-- Name or Username -->
-				<div>
-					<label for="name">Name or Username:</label><br>
-					<input type="text" id="name" placeholder="Name or username" required>
-					<br><br>
-				</div>
-				<!-- Email or Discord -->
-				<div>
-					<label for="contact">Email or Discord:</label><br>
-					<input type="text" id="contact" placeholder="Email or discord" required>
-					<br><br>
-				</div>
-				<!-- Message -->
-				<div>
-					<label for="message">Message:</label><br>
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-					<br><br>
-				</div>
-				<!-- Wait List Check Box -->
-				<div>
-					<label for="wait-list">Want to be added to the commission wait list?:</label>
-					<input type="checkbox" id="wait-list">Yes
-				</div>
+            <!-- Button Section -->
+			<nav id="buttons">
+				<!-- Clickable button (link to the pages they belong to) -->
+                <ul class="no-bullet">
+                    <li><button onclick="location.href='stories.html'" type="button" class="purple">Stories</button></li>
+                    <li><button onclick="location.href='socials.html'" type="button" class="purple greyed-out">Socials</button></li>
+                </ul>
+			</nav>
+
+			<!-- Article section -->
+			<section id="article">
 				
-				<!-- Submit -->
-				<div>
-					<br><br>
-  					<input type="submit" value="Submit">
-					<br><br>
-				</div>
-			</form>
+				<!-- Article Title -->
+			    <h2 class="art-cent-head">Socials</h2>
+
+                <ul class="socials-list">
+					<li><a href="https://www.deviantart.com/zulabrokenwing">ZulaBrokenWing on DeviantArt</a></li>
+					<li><a href="https://toyhou.se/ZulaBrokenWing">ZulaBrokenWing on ToyHouse</a></li>
+                    <!-- Leaving the link for future development of Artfol becoming a website as well as an app -->
+					<li><a href="#">ZulaBrokenWing on Artfol</a> <div>(currently an app that will get a website later)</div></li>
+                    
+                    <li>ZulaBrokenWing on Discord</li>
+				</ul>
+
+			</section>
 		</main>
 
 		<!-- Disclaimer Footer -->
